@@ -1,0 +1,57 @@
+---
+title: Impact of Clean Up The City on sidewalk cleanliness
+---
+
+We begin by joining the two datasets published by DPW(<https://data.sfgov.org/City-Infrastructure/DPW-Street-Sidewalk-Evaluation-Results-CY22/fsqv-4vqv/about_data>, <https://data.sfgov.org/City-Infrastructure/Street-Sidewalk-Maintenance-Standards-Results-Jan-/qya8-uhsz/about_data>), as neither is a proper subset of the other.
+
+Unforunately, the second dataset is missing precise locations. I emailed SF gov to see if this can be fixed.
+
+```
+TODO(devon): revisit once this is confirmed.
+```
+
+```{python}
+#| title: Look at schema
+#| echo: false
+#| output: false
+import polars as pl
+
+with pl.Config(tbl_cols=-1, tbl_width_chars=1000):
+  print(pl.read_csv("data/DPW_Street___Sidewalk_Evaluation_Results__CY22_20241122.csv").describe())
+  print(pl.read_csv("data/Street___Sidewalk_Maintenance_Standards_Results__Jan_2022-Jun_2024_20241209.csv").describe())
+```
+
+```{python}
+#| title: Join old and new datasets
+old_dataset = pl.read_csv("data/DPW_Street___Sidewalk_Evaluation_Results__CY22_20241122.csv").select(
+    pl.col("ObjectID").alias("object_id"),
+    pl.col("Route ID:").alias("route_id"),
+    pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
+    pl.col("CreationDate").str.to_datetime("%m/%d/%Y %I:%M:%S %p").alias("evaluation_date"),
+    # pl.col("the_geom").alias("geom"),
+  )
+new_dataset = pl.read_csv("data/Street___Sidewalk_Maintenance_Standards_Results__Jan_2022-Jun_2024_20241209.csv").select(
+    pl.col("ObjectID").alias("object_id"),
+    pl.col("Route ID:").alias("route_id"),
+    pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
+    pl.col("CreationDate").str.to_datetime("%m/%d/%Y %I:%M:%S %p").alias("evaluation_date"),
+    # pl.col("the_geom").alias("geom"), # missing precise location data :/
+  )
+
+data = pl.concat([old_dataset, new_dataset]).unique(subset="object_id", keep="last")
+
+data.describe()
+```
+
+We see that there is decent support in the time period that Clean Up the City has been active.
+
+```{python}
+import altair as alt
+
+alt.Chart(data.with_columns(
+  ((pl.col("evaluation_date") - pl.col("evaluation_date").min()).dt.total_days() / 7).alias("total_weeks")
+)).mark_bar().encode(
+  alt.X("total_weeks").bin(step=1),
+  y="count()"
+)
+```
