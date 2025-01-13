@@ -61,6 +61,7 @@
                 jupyter
                 jupyter-cache
                 matplotlib
+                osmnx
                 pandas
                 polars
                 pyarrow

@@ -1,0 +1,704 @@
+neighborhood,location,time,count
+24th Street,Temo’s Cafe,"November 2, 2024, 10:00 AM",5
+24th Street,Temo’s Cafe,"November 16, 2024, 10:00 AM",3
+24th Street,Temo’s Cafe,"December 14, 2024, 10:00 AM",1
+24th Street,Temo’s Cafe,"January 4, 2025, 11:00 AM",3
+24th Street,Temo’s Cafe,"January 18, 2025, 11:00 AM",1
+Bayview,All Good Pizza,"October 7, 2023, 12:00 AM",6
+Bayview,All Good Pizza,"October 14, 2023, 12:00 AM",6
+Bayview,All Good Pizza,"October 21, 2023, 12:00 AM",5
+Bayview,All Good Pizza,"October 28, 2023, 12:00 AM",3
+Bayview,All Good Pizza,"November 11, 2023, 12:00 AM",6
+Bayview,All Good Pizza,"December 2, 2023, 12:00 AM",2
+Bayview,All Good Pizza,"December 9, 2023, 12:00 AM",3
+Bayview,All Good Pizza,"December 16, 2023, 12:00 AM",2
+Bayview,All Good Pizza,"January 6, 2024, 12:00 AM",4
+Bayview,All Good Pizza,"January 13, 2024, 12:00 AM",5
+Bayview,All Good Pizza,"January 27, 2024, 12:00 AM",8
+Bayview,All Good Pizza,"February 24, 2024, 12:00 AM",4
+Bayview,All Good Pizza,"March 9, 2024, 12:00 AM",8
+Bayview,All Good Pizza,"March 16, 2024, 12:00 AM",5
+Bayview,All Good Pizza,"March 23, 2024, 12:00 AM",5
+Bayview,All Good Pizza,"March 30, 2024, 12:00 AM",5
+Bayview,All Good Pizza,"April 6, 2024, 12:00 AM",12
+Bayview,All Good Pizza,"April 13, 2024, 12:00 AM",8
+Bayview,All Good Pizza,"April 20, 2024, 12:00 AM",1
+Bayview,All Good Pizza,"May 11, 2024, 12:00 AM",3
+Bayview,All Good Pizza,"May 18, 2024, 12:00 AM",3
+Bayview,All Good Pizza,"May 25, 2024, 12:00 AM",4
+Bayview,All Good Pizza,"June 1, 2024, 12:00 AM",2
+Bayview,All Good Pizza,"June 8, 2024, 12:00 AM",3
+Bayview,All Good Pizza,"September 21, 2024, 10:00 AM",5
+Fillmore,The Social Study,"August 19, 2023, 12:00 AM",8
+Fillmore,The Social Study,"August 26, 2023, 12:00 AM",10
+Fillmore,The Social Study,"September 2, 2023, 12:00 AM",9
+Fillmore,The Social Study,"September 9, 2023, 12:00 AM",8
+Fillmore,The Social Study,"September 16, 2023, 12:00 AM",11
+Fillmore,The Social Study,"September 23, 2023, 12:00 AM",11
+Fillmore,The Social Study,"September 30, 2023, 12:00 AM",7
+Fillmore,The Social Study,"October 14, 2023, 12:00 AM",5
+Fillmore,The Social Study,"October 21, 2023, 12:00 AM",5
+Fillmore,The Social Study,"October 28, 2023, 12:00 AM",13
+Fillmore,The Social Study,"November 4, 2023, 12:00 AM",17
+Fillmore,The Social Study,"November 11, 2023, 12:00 AM",12
+Fillmore,The Social Study,"November 18, 2023, 12:00 AM",10
+Fillmore,The Social Study,"November 25, 2023, 12:00 AM",10
+Fillmore,The Social Study,"December 2, 2023, 12:00 AM",14
+Fillmore,The Social Study,"December 9, 2023, 12:00 AM",12
+Fillmore,The Social Study,"December 16, 2023, 12:00 AM",12
+Fillmore,The Social Study,"December 23, 2023, 12:00 AM",9
+Fillmore,The Social Study,"December 30, 2023, 12:00 AM",11
+Fillmore,The Social Study,"January 6, 2024, 12:00 AM",14
+Fillmore,The Social Study,"January 13, 2024, 12:00 AM",9
+Fillmore,The Social Study,"January 20, 2024, 12:00 AM",9
+Fillmore,The Social Study,"January 27, 2024, 12:00 AM",16
+Fillmore,The Social Study,"February 3, 2024, 12:00 AM",15
+Fillmore,The Social Study,"February 10, 2024, 12:00 AM",14
+Fillmore,The Social Study,"February 17, 2024, 12:00 AM",4
+Fillmore,The Social Study,"February 24, 2024, 12:00 AM",11
+Fillmore,The Social Study,"March 2, 2024, 12:00 AM",14
+Fillmore,The Social Study,"March 9, 2024, 12:00 AM",11
+Fillmore,The Social Study,"March 16, 2024, 12:00 AM",11
+Fillmore,The Social Study,"March 23, 2024, 12:00 AM",15
+Fillmore,The Social Study,"March 30, 2024, 12:00 AM",13
+Fillmore,The Social Study,"April 6, 2024, 12:00 AM",12
+Fillmore,The Social Study,"April 13, 2024, 12:00 AM",10
+Fillmore,The Social Study,"April 20, 2024, 12:00 AM",14
+Fillmore,The Social Study,"April 27, 2024, 12:00 AM",14
+Fillmore,The Social Study,"May 4, 2024, 12:00 AM",4
+Fillmore,The Social Study,"May 11, 2024, 12:00 AM",16
+Fillmore,The Social Study,"May 18, 2024, 12:00 AM",12
+Fillmore,The Social Study,"May 25, 2024, 12:00 AM",9
+Fillmore,The Social Study,"June 1, 2024, 12:00 AM",9
+Fillmore,The Social Study,"June 8, 2024, 12:00 AM",6
+Fillmore,The Social Study,"June 15, 2024, 12:00 AM",14
+Fillmore,The Social Study,"June 22, 2024, 12:00 PM",1
+Fillmore,The Social Study,"June 29, 2024, 12:00 PM",20
+Fillmore,The Social Study,"July 13, 2024, 12:00 PM",19
+Fillmore,The Social Study,"July 20, 2024, 12:00 PM",20
+Fillmore,The Social Study,"August 10, 2024, 10:00 AM",20
+Hayes Valley,Gambit Lounge,"May 13, 2023, 12:00 AM",13
+Hayes Valley,Gambit Lounge,"June 3, 2023, 12:00 AM",11
+Hayes Valley,Gambit Lounge,"June 10, 2023, 12:00 AM",17
+Hayes Valley,Gambit Lounge,"June 17, 2023, 12:00 AM",10
+Hayes Valley,Gambit Lounge,"June 24, 2023, 12:00 AM",16
+Hayes Valley,Gambit Lounge,"July 1, 2023, 12:00 AM",6
+Hayes Valley,Gambit Lounge,"July 8, 2023, 10:00 AM",7
+Hayes Valley,Gambit Lounge,"July 15, 2023, 10:00 AM",18
+Hayes Valley,Gambit Lounge,"July 20, 2023, 10:00 AM",19
+Hayes Valley,Gambit Lounge,"July 29, 2023, 10:00 AM",21
+Hayes Valley,Gambit Lounge,"August 5, 2023, 10:00 AM",26
+Hayes Valley,Gambit Lounge,"August 12, 2023, 10:00 AM",28
+Hayes Valley,Gambit Lounge,"August 19, 2023, 10:00 AM",27
+Hayes Valley,Gambit Lounge,"August 26, 2023, 10:00 AM",25
+Hayes Valley,Gambit Lounge,"September 2, 2023, 10:00 AM",33
+Hayes Valley,Gambit Lounge,"September 9, 2023, 10:00 AM",23
+Hayes Valley,Gambit Lounge,"September 16, 2023, 9:40 AM",23
+Hayes Valley,Gambit Lounge,"September 23, 2023, 10:00 AM",36
+Hayes Valley,Gambit Lounge,"September 30, 2023, 10:00 AM",24
+Hayes Valley,Gambit Lounge,"October 7, 2023, 10:00 AM",25
+Hayes Valley,Gambit Lounge,"October 14, 2023, 10:00 AM",23
+Hayes Valley,Gambit Lounge,"October 21, 2023, 10:00 AM",1
+Hayes Valley,Gambit Lounge,"October 28, 2023, 9:33 AM",21
+Hayes Valley,Gambit Lounge,"November 4, 2023, 10:00 AM",39
+Hayes Valley,Gambit Lounge,"November 11, 2023, 9:45 AM",26
+Hayes Valley,Gambit Lounge,"November 17, 2023, 10:00 AM",28
+Hayes Valley,Gambit Lounge,"November 25, 2023, 10:00 AM",12
+Hayes Valley,Gambit Lounge,"December 2, 2023, 10:00 AM",31
+Hayes Valley,Gambit Lounge,"December 9, 2023, 9:39 AM",34
+Hayes Valley,Gambit Lounge,"December 16, 2023, 10:00 AM",17
+Hayes Valley,Gambit Lounge,"December 17, 2023, 9:21 AM",1
+Hayes Valley,Gambit Lounge,"December 23, 2023, 10:00 AM",29
+Hayes Valley,Gambit Lounge,"December 30, 2023, 10:00 AM",26
+Hayes Valley,Gambit Lounge,"January 6, 2024, 10:00 AM",22
+Hayes Valley,Gambit Lounge,"January 13, 2024, 10:00 AM",20
+Hayes Valley,Gambit Lounge,"January 20, 2024, 10:00 AM",21
+Hayes Valley,Gambit Lounge,"January 27, 2024, 10:00 AM",23
+Hayes Valley,Gambit Lounge,"February 3, 2024, 10:00 AM",26
+Hayes Valley,Gambit Lounge,"February 10, 2024, 10:00 AM",22
+Hayes Valley,Gambit Lounge,"February 17, 2024, 9:09 AM",19
+Hayes Valley,Gambit Lounge,"February 24, 2024, 10:00 AM",45
+Hayes Valley,Gambit Lounge,"March 2, 2024, 9:35 AM",26
+Hayes Valley,Gambit Lounge,"March 9, 2024, 9:56 AM",34
+Hayes Valley,Gambit Lounge,"March 16, 2024, 10:00 AM",26
+Hayes Valley,Gambit Lounge,"March 23, 2024, 10:00 AM",45
+Hayes Valley,Gambit Lounge,"March 30, 2024, 10:00 AM",58
+Hayes Valley,Gambit Lounge,"April 6, 2024, 10:00 AM",34
+Hayes Valley,Gambit Lounge,"April 13, 2024, 10:01 AM",40
+Hayes Valley,Gambit Lounge,"April 20, 2024, 10:00 AM",37
+Hayes Valley,Gambit Lounge,"April 27, 2024, 10:00 AM",31
+Hayes Valley,Gambit Lounge,"May 4, 2024, 10:00 AM",26
+Hayes Valley,Gambit Lounge,"May 11, 2024, 10:00 AM",31
+Hayes Valley,Gambit Lounge,"May 18, 2024, 10:00 AM",36
+Hayes Valley,Gambit Lounge,"May 25, 2024, 10:00 AM",33
+Hayes Valley,Gambit Lounge,"June 1, 2024, 10:00 AM",34
+Hayes Valley,Gambit Lounge,"June 8, 2024, 10:00 AM",40
+Hayes Valley,Gambit Lounge,"June 15, 2024, 9:22 AM",37
+Hayes Valley,Gambit Lounge,"June 22, 2024, 10:00 AM",31
+Hayes Valley,Gambit Lounge,"June 28, 2024, 10:00 AM",25
+Hayes Valley,Gambit Lounge,"June 29, 2024, 10:00 AM",25
+Hayes Valley,Gambit Lounge,"July 6, 2024, 10:00 AM",24
+Hayes Valley,Gambit Lounge,"July 13, 2024, 10:00 AM",29
+Hayes Valley,Gambit Lounge,"July 20, 2024, 8:40 AM",29
+Hayes Valley,Gambit Lounge,"July 27, 2024, 9:40 AM",28
+Hayes Valley,Gambit Lounge,"August 3, 2024, 10:00 AM",44
+Hayes Valley,Gambit Lounge,"August 10, 2024, 8:48 AM",29
+Hayes Valley,Gambit Lounge,"August 17, 2024, 10:00 AM",30
+Hayes Valley,Gambit Lounge,"August 24, 2024, 10:00 AM",19
+Hayes Valley,Gambit Lounge,"August 31, 2024, 10:00 AM",33
+Hayes Valley,Gambit Lounge,"September 7, 2024, 9:55 AM",31
+Hayes Valley,Gambit Lounge,"September 14, 2024, 10:00 AM",24
+Hayes Valley,Gambit Lounge,"September 21, 2024, 10:00 AM",33
+Hayes Valley,Gambit Lounge,"September 28, 2024, 9:23 AM",38
+Hayes Valley,Gambit Lounge,"October 5, 2024, 10:00 AM",21
+Hayes Valley,Gambit Lounge,"October 12, 2024, 10:00 AM",31
+Hayes Valley,Gambit Lounge,"October 18, 2024, 10:00 AM",1
+Hayes Valley,Gambit Lounge,"October 19, 2024, 10:00 AM",34
+Hayes Valley,Gambit Lounge,"October 26, 2024, 10:00 AM",30
+Hayes Valley,Gambit Lounge,"November 2, 2024, 9:50 AM",32
+Hayes Valley,Gambit Lounge,"November 9, 2024, 10:00 AM",28
+Hayes Valley,Gambit Lounge,"November 16, 2024, 10:00 AM",32
+Hayes Valley,Gambit Lounge,"November 23, 2024, 10:00 AM",28
+Hayes Valley,Gambit Lounge,"December 6, 2024, 10:00 AM",1
+Hayes Valley,Gambit Lounge,"December 7, 2024, 10:00 AM",36.5
+Hayes Valley,Gambit Lounge,"December 14, 2024, 10:00 AM",28
+Hayes Valley,Gambit Lounge,"December 21, 2024, 10:00 AM",28
+Hayes Valley,Gambit Lounge,"December 27, 2024, 10:00 AM",18
+Hayes Valley,Gambit Lounge,"December 28, 2024, 10:00 AM",1
+Hayes Valley,Gambit Lounge,"January 4, 2025, 10:00 AM",41
+Ingleside,Ocean Ale House,"August 12, 2023, 12:00 AM",5
+Ingleside,Ocean Ale House,"August 19, 2023, 12:00 AM",10
+Ingleside,Ocean Ale House,"September 2, 2023, 12:00 AM",14
+Ingleside,Ocean Ale House,"October 7, 2023, 12:00 AM",15
+Ingleside,Ocean Ale House,"November 4, 2023, 12:00 AM",15
+Ingleside,Ocean Ale House,"November 11, 2023, 12:00 AM",22
+Ingleside,Ocean Ale House,"November 18, 2023, 12:00 AM",7
+Ingleside,Ocean Ale House,"November 25, 2023, 12:00 AM",14
+Ingleside,Ocean Ale House,"January 13, 2024, 12:00 AM",24
+Ingleside,Ocean Ale House,"February 24, 2024, 12:00 AM",21
+Ingleside,Ocean Ale House,"March 2, 2024, 12:00 AM",11
+Ingleside,Ocean Ale House,"March 9, 2024, 12:00 AM",12
+Ingleside,Ocean Ale House,"March 23, 2024, 12:00 AM",9
+Ingleside,Ocean Ale House,"March 30, 2024, 12:00 AM",27
+Ingleside,Ocean Ale House,"April 6, 2024, 12:00 AM",10
+Ingleside,Ocean Ale House,"April 13, 2024, 12:00 AM",14
+Ingleside,Ocean Ale House,"April 27, 2024, 12:00 AM",12
+Ingleside,Ocean Ale House,"May 18, 2024, 12:00 AM",6
+Ingleside,Ocean Ale House,"May 25, 2024, 12:00 AM",12
+Ingleside,Ocean Ale House,"June 1, 2024, 12:00 AM",12
+Ingleside,Ocean Ale House,"June 8, 2024, 12:00 AM",16
+Ingleside,Ocean Ale House,"June 15, 2024, 12:00 AM",7
+Ingleside,Ocean Ale House,"June 22, 2024, 12:00 AM",17
+Ingleside,Ocean Ale House,"June 29, 2024, 11:00 AM",24
+Ingleside,Ocean Ale House,"July 6, 2024, 11:00 AM",12
+Ingleside,Ocean Ale House,"July 13, 2024, 11:00 AM",9
+Ingleside,Ocean Ale House,"July 20, 2024, 11:00 AM",8
+Ingleside,Ocean Ale House,"July 27, 2024, 11:00 AM",7
+Ingleside,Ocean Ale House,"August 3, 2024, 11:00 AM",10
+Ingleside,Ocean Ale House,"August 10, 2024, 11:00 AM",12
+Ingleside,Ocean Ale House,"August 17, 2024, 11:00 AM",6
+Ingleside,Ocean Ale House,"August 24, 2024, 11:00 AM",12
+Ingleside,Ocean Ale House,"August 31, 2024, 11:00 AM",14
+Ingleside,Ocean Ale House,"September 7, 2024, 11:00 AM",16
+Ingleside,Ocean Ale House,"September 14, 2024, 11:00 AM",11
+Ingleside,Ocean Ale House,"September 21, 2024, 11:00 AM",13
+Ingleside,Ocean Ale House,"September 28, 2024, 11:00 AM",18
+Ingleside,Ocean Ale House,"October 5, 2024, 11:00 AM",10
+Ingleside,Ocean Ale House,"October 12, 2024, 11:00 AM",14
+Ingleside,Ocean Ale House,"October 19, 2024, 11:00 AM",1
+Ingleside,Ocean Ale House,"October 26, 2024, 11:00 AM",12
+Ingleside,Ocean Ale House,"November 2, 2024, 11:00 AM",13
+Ingleside,Ocean Ale House,"November 9, 2024, 11:00 AM",1
+Ingleside,Ocean Ale House,"November 16, 2024, 11:00 AM",1
+Ingleside,Ocean Ale House,"November 23, 2024, 10:00 AM",16
+Ingleside,Ocean Ale House,"November 23, 2024, 11:00 AM",1
+Ingleside,Ocean Ale House,"November 30, 2024, 11:00 AM",8
+Ingleside,Ocean Ale House,"December 7, 2024, 11:00 AM",17.5
+Ingleside,Ocean Ale House,"December 14, 2024, 11:00 AM",5
+Ingleside,Ocean Ale House,"December 21, 2024, 11:00 AM",6
+Ingleside,Ocean Ale House,"December 28, 2024, 11:00 AM",1
+Ingleside,Ocean Ale House,"January 4, 2025, 11:00 AM",1
+Ingleside,Ocean Ale House,"January 11, 2025, 11:00 AM",1
+Ingleside,Ocean Ale House,"January 18, 2025, 11:00 AM",1
+Lower Nob Hill,Another Cafe,"April 23, 2023, 12:00 AM",15
+Lower Nob Hill,Another Cafe,"May 7, 2023, 12:00 AM",11
+Lower Nob Hill,Another Cafe,"May 21, 2023, 12:00 AM",16
+Lower Nob Hill,Another Cafe,"May 28, 2023, 12:00 AM",6
+Lower Nob Hill,Another Cafe,"June 4, 2023, 12:00 AM",12
+Lower Nob Hill,Another Cafe,"June 11, 2023, 12:00 AM",11
+Lower Nob Hill,Another Cafe,"June 18, 2023, 12:00 AM",14
+Lower Nob Hill,Another Cafe,"June 25, 2023, 12:00 AM",10
+Lower Nob Hill,Another Cafe,"July 9, 2023, 12:00 AM",7
+Lower Nob Hill,Another Cafe,"July 16, 2023, 12:00 AM",16
+Lower Nob Hill,Another Cafe,"July 23, 2023, 12:00 AM",8
+Lower Nob Hill,Another Cafe,"July 30, 2023, 12:00 AM",14
+Lower Nob Hill,Another Cafe,"August 6, 2023, 12:00 AM",16
+Lower Nob Hill,Another Cafe,"August 13, 2023, 12:00 AM",14
+Lower Nob Hill,Another Cafe,"August 20, 2023, 12:00 AM",22
+Lower Nob Hill,Another Cafe,"August 27, 2023, 12:00 AM",24
+Lower Nob Hill,Another Cafe,"September 3, 2023, 12:00 AM",19
+Lower Nob Hill,Another Cafe,"September 10, 2023, 12:00 AM",21
+Lower Nob Hill,Another Cafe,"September 17, 2023, 12:00 AM",22
+Lower Nob Hill,Another Cafe,"September 24, 2023, 12:00 AM",27
+Lower Nob Hill,Another Cafe,"October 1, 2023, 12:00 AM",32
+Lower Nob Hill,Another Cafe,"October 8, 2023, 12:00 AM",27
+Lower Nob Hill,Another Cafe,"October 15, 2023, 12:00 AM",15
+Lower Nob Hill,Another Cafe,"October 22, 2023, 10:00 AM",8
+Lower Nob Hill,Another Cafe,"October 29, 2023, 10:00 AM",15
+Lower Nob Hill,Another Cafe,"November 5, 2023, 10:00 AM",2
+Lower Nob Hill,Another Cafe,"November 12, 2023, 12:00 AM",16
+Lower Nob Hill,Another Cafe,"November 19, 2023, 12:00 AM",27
+Lower Nob Hill,Another Cafe,"November 26, 2023, 10:00 AM",1
+Lower Nob Hill,Another Cafe,"December 3, 2023, 12:00 AM",27
+Lower Nob Hill,Another Cafe,"December 10, 2023, 10:00 AM",2
+Lower Nob Hill,Another Cafe,"December 17, 2023, 10:00 AM",1
+Lower Nob Hill,Another Cafe,"December 31, 2023, 12:00 AM",18
+Lower Nob Hill,Another Cafe,"January 7, 2024, 12:00 AM",25
+Lower Nob Hill,Another Cafe,"January 14, 2024, 12:00 AM",31
+Lower Nob Hill,Another Cafe,"January 21, 2024, 12:00 AM",26
+Lower Nob Hill,Another Cafe,"January 28, 2024, 12:00 AM",22
+Lower Nob Hill,Another Cafe,"February 11, 2024, 12:00 AM",26
+Lower Nob Hill,Another Cafe,"February 18, 2024, 12:00 AM",27
+Lower Nob Hill,Another Cafe,"February 25, 2024, 12:00 AM",27
+Lower Nob Hill,Another Cafe,"March 3, 2024, 12:00 AM",31
+Lower Nob Hill,Another Cafe,"March 10, 2024, 12:00 AM",36
+Lower Nob Hill,Another Cafe,"March 17, 2024, 12:00 AM",26
+Lower Nob Hill,Another Cafe,"March 24, 2024, 12:00 AM",26
+Lower Nob Hill,Another Cafe,"March 31, 2024, 12:00 AM",31
+Lower Nob Hill,Another Cafe,"April 7, 2024, 12:00 AM",29
+Lower Nob Hill,Another Cafe,"April 14, 2024, 12:00 AM",33
+Lower Nob Hill,Another Cafe,"April 28, 2024, 12:00 AM",31
+Lower Nob Hill,Another Cafe,"May 12, 2024, 12:00 AM",16
+Lower Nob Hill,Another Cafe,"May 19, 2024, 12:00 AM",20
+Lower Nob Hill,Another Cafe,"May 26, 2024, 12:00 AM",27
+Lower Nob Hill,Another Cafe,"June 2, 2024, 12:00 AM",36
+Lower Nob Hill,Another Cafe,"June 9, 2024, 12:00 AM",28
+Lower Nob Hill,Another Cafe,"June 16, 2024, 12:00 AM",23
+Lower Nob Hill,Another Cafe,"June 23, 2024, 9:45 AM",1
+Lower Nob Hill,Another Cafe,"June 30, 2024, 10:00 AM",18
+Lower Nob Hill,Another Cafe,"July 7, 2024, 10:00 AM",28
+Lower Nob Hill,Another Cafe,"July 14, 2024, 10:00 AM",22
+Lower Nob Hill,Another Cafe,"July 21, 2024, 10:00 AM",35
+Lower Nob Hill,Another Cafe,"August 11, 2024, 9:45 AM",37
+Lower Nob Hill,Another Cafe,"August 18, 2024, 9:45 AM",34
+Lower Nob Hill,Another Cafe,"August 25, 2024, 9:45 AM",44
+Lower Nob Hill,Another Cafe,"November 3, 2024, 11:00 AM",45
+Lower Nob Hill,Another Cafe,"November 17, 2024, 10:00 AM",72
+Lower Nob Hill,Another Cafe,"December 1, 2024, 10:00 AM",38
+Lower Nob Hill,Another Cafe,"December 8, 2024, 10:00 AM",46
+Lower Nob Hill,Another Cafe,"December 15, 2024, 10:00 AM",39
+Lower Polk,Jane on Larkin,"May 20, 2023, 12:00 AM",8
+Lower Polk,Jane on Larkin,"May 27, 2023, 12:00 AM",6
+Lower Polk,Jane on Larkin,"June 3, 2023, 12:00 AM",11
+Lower Polk,Jane on Larkin,"June 10, 2023, 12:00 AM",6
+Lower Polk,Jane on Larkin,"June 17, 2023, 12:00 AM",9
+Lower Polk,Jane on Larkin,"June 24, 2023, 12:00 AM",14
+Lower Polk,Jane on Larkin,"July 1, 2023, 12:00 AM",10
+Lower Polk,Jane on Larkin,"July 8, 2023, 12:00 AM",11
+Lower Polk,Jane on Larkin,"July 15, 2023, 12:00 AM",7
+Lower Polk,Jane on Larkin,"July 22, 2023, 12:00 AM",12
+Lower Polk,Jane on Larkin,"July 29, 2023, 12:00 AM",7
+Lower Polk,Jane on Larkin,"August 5, 2023, 12:00 AM",10
+Lower Polk,Jane on Larkin,"August 12, 2023, 12:00 AM",6
+Lower Polk,Jane on Larkin,"August 19, 2023, 12:00 AM",11
+Lower Polk,Jane on Larkin,"August 26, 2023, 12:00 AM",8
+Lower Polk,Jane on Larkin,"September 2, 2023, 12:00 AM",16
+Lower Polk,Jane on Larkin,"September 9, 2023, 12:00 AM",5
+Lower Polk,Jane on Larkin,"September 23, 2023, 12:00 AM",15
+Lower Polk,Jane on Larkin,"September 30, 2023, 12:00 AM",5
+Lower Polk,Jane on Larkin,"October 7, 2023, 12:00 AM",5
+Lower Polk,Jane on Larkin,"October 14, 2023, 12:00 AM",10
+Lower Polk,Jane on Larkin,"October 21, 2023, 12:00 AM",3
+Lower Polk,Jane on Larkin,"October 28, 2023, 12:00 AM",8
+Lower Polk,Jane on Larkin,"November 4, 2023, 12:00 AM",11
+Lower Polk,Jane on Larkin,"November 11, 2023, 12:00 AM",9
+Lower Polk,Jane on Larkin,"November 18, 2023, 12:00 AM",8
+Lower Polk,Jane on Larkin,"November 25, 2023, 12:00 AM",9
+Lower Polk,Jane on Larkin,"December 2, 2023, 12:00 AM",6
+Lower Polk,Jane on Larkin,"December 9, 2023, 12:00 AM",10
+Lower Polk,Jane on Larkin,"December 16, 2023, 12:00 AM",7
+Lower Polk,Jane on Larkin,"December 23, 2023, 12:00 AM",9
+Lower Polk,Jane on Larkin,"December 30, 2023, 12:00 AM",4
+Lower Polk,Jane on Larkin,"January 6, 2024, 12:00 AM",6
+Lower Polk,Jane on Larkin,"January 13, 2024, 12:00 AM",7
+Lower Polk,Jane on Larkin,"January 20, 2024, 12:00 AM",6
+Lower Polk,Jane on Larkin,"January 27, 2024, 12:00 AM",9
+Lower Polk,Jane on Larkin,"February 3, 2024, 12:00 AM",14
+Lower Polk,Jane on Larkin,"February 10, 2024, 12:00 AM",7
+Lower Polk,Jane on Larkin,"February 17, 2024, 12:00 AM",7
+Lower Polk,Jane on Larkin,"February 24, 2024, 12:00 AM",5
+Lower Polk,Jane on Larkin,"March 2, 2024, 12:00 AM",8
+Lower Polk,Jane on Larkin,"March 9, 2024, 12:00 AM",6
+Lower Polk,Jane on Larkin,"March 16, 2024, 12:00 AM",10
+Lower Polk,Jane on Larkin,"March 23, 2024, 12:00 AM",8
+Lower Polk,Jane on Larkin,"March 30, 2024, 12:00 AM",8
+Lower Polk,Jane on Larkin,"April 6, 2024, 12:00 AM",7
+Lower Polk,Jane on Larkin,"April 13, 2024, 12:00 AM",6
+Lower Polk,Jane on Larkin,"April 20, 2024, 12:00 AM",7
+Lower Polk,Jane on Larkin,"April 27, 2024, 12:00 AM",7
+Lower Polk,Jane on Larkin,"May 4, 2024, 12:00 AM",5
+Lower Polk,Jane on Larkin,"May 11, 2024, 12:00 AM",5
+Lower Polk,Jane on Larkin,"May 18, 2024, 11:00 AM",3
+Lower Polk,Jane on Larkin,"May 25, 2024, 11:00 AM",2
+Lower Polk,Jane on Larkin,"June 1, 2024, 12:00 AM",10
+Lower Polk,Jane on Larkin,"June 8, 2024, 11:00 AM",6
+Lower Polk,Jane on Larkin,"June 15, 2024, 11:00 AM",4
+Lower Polk,Jane on Larkin,"June 22, 2024, 12:00 AM",11
+Lower Polk,Jane on Larkin,"July 6, 2024, 11:00 AM",8
+Lower Polk,Jane on Larkin,"August 10, 2024, 11:00 AM",7
+Lower Polk,Jane on Larkin,"August 17, 2024, 12:00 PM",17
+Lower Polk,Jane on Larkin,"August 24, 2024, 12:00 PM",9
+Lower Polk,Jane on Larkin,"November 2, 2024, 11:00 AM",10
+Lower Polk,Jane on Larkin,"November 10, 2024, 10:00 AM",7
+Lower Polk,Jane on Larkin,"November 16, 2024, 11:00 AM",9
+Lower Polk,Jane on Larkin,"November 23, 2024, 11:00 AM",9
+Lower Polk,Jane on Larkin,"December 14, 2024, 11:00 AM",1
+Northern Mission,Manny's,"October 2, 2022, 10:00 AM",199
+Northern Mission,Manny's,"October 9, 2022, 10:00 AM",60
+Northern Mission,Manny's,"October 16, 2022, 10:00 AM",36
+Northern Mission,Manny's,"October 23, 2022, 10:00 AM",18
+Northern Mission,Manny's,"October 30, 2022, 10:00 AM",10
+Northern Mission,Manny's,"November 6, 2022, 10:00 AM",8
+Northern Mission,Manny's,"November 13, 2022, 10:00 AM",5
+Northern Mission,Manny's,"November 20, 2022, 10:00 AM",4
+Northern Mission,Manny's,"November 27, 2022, 10:00 AM",4
+Northern Mission,Manny's,"December 4, 2022, 10:00 AM",4
+Northern Mission,Manny's,"December 11, 2022, 10:00 AM",2
+Northern Mission,Manny's,"December 18, 2022, 10:00 AM",1
+Northern Mission,Manny's,"December 25, 2022, 10:00 AM",1
+Northern Mission,Manny's,"January 1, 2023, 10:00 AM",1
+Northern Mission,Manny's,"January 8, 2023, 10:00 AM",1
+Northern Mission,Manny's,"January 15, 2023, 10:00 AM",50
+Northern Mission,Manny's,"January 22, 2023, 10:00 AM",87
+Northern Mission,Manny's,"January 29, 2023, 10:00 AM",51
+Northern Mission,Manny's,"February 5, 2023, 10:00 AM",30
+Northern Mission,Manny's,"February 12, 2023, 10:00 AM",27
+Northern Mission,Manny's,"February 19, 2023, 10:00 AM",48
+Northern Mission,Manny's,"February 26, 2023, 10:00 AM",37
+Northern Mission,Manny's,"March 5, 2023, 10:00 AM",70
+Northern Mission,Manny's,"March 12, 2023, 10:00 AM",39
+Northern Mission,Manny's,"March 19, 2023, 10:00 AM",38
+Northern Mission,Manny's,"March 26, 2023, 10:00 AM",67
+Northern Mission,Manny's,"April 2, 2023, 10:00 AM",67
+Northern Mission,Manny's,"April 9, 2023, 10:00 AM",73
+Northern Mission,Manny's,"April 16, 2023, 10:00 AM",62
+Northern Mission,Manny's,"April 23, 2023, 10:00 AM",50
+Northern Mission,Manny's,"April 24, 2023, 10:17 AM",13
+Northern Mission,Manny's,"April 30, 2023, 10:00 AM",63
+Northern Mission,Manny's,"April 30, 2023, 11:22 AM",1
+Northern Mission,Manny's,"May 2, 2023, 10:00 AM",77
+Northern Mission,Manny's,"May 7, 2023, 10:00 AM",18
+Northern Mission,Manny's,"May 14, 2023, 10:00 AM",64
+Northern Mission,Manny's,"May 21, 2023, 10:00 AM",39
+Northern Mission,Manny's,"May 28, 2023, 10:00 AM",45
+Northern Mission,Manny's,"June 4, 2023, 10:00 AM",40
+Northern Mission,Manny's,"June 11, 2023, 10:00 AM",54
+Northern Mission,Manny's,"June 18, 2023, 10:00 AM",40
+Northern Mission,Manny's,"June 25, 2023, 10:00 AM",34
+Northern Mission,Manny's,"July 2, 2023, 10:00 AM",48
+Northern Mission,Manny's,"July 9, 2023, 10:00 AM",70
+Northern Mission,Manny's,"July 16, 2023, 10:00 AM",49
+Northern Mission,Manny's,"July 23, 2023, 10:00 AM",113
+Northern Mission,Manny's,"July 30, 2023, 10:08 AM",79
+Northern Mission,Manny's,"August 6, 2023, 10:00 AM",66
+Northern Mission,Manny's,"August 13, 2023, 10:00 AM",58
+Northern Mission,Manny's,"August 20, 2023, 10:00 AM",68
+Northern Mission,Manny's,"August 27, 2023, 10:00 AM",90
+Northern Mission,Manny's,"September 3, 2023, 10:00 AM",82
+Northern Mission,Manny's,"September 10, 2023, 10:00 AM",80
+Northern Mission,Manny's,"September 17, 2023, 10:00 AM",90
+Northern Mission,Manny's,"September 24, 2023, 10:00 AM",49
+Northern Mission,Manny's,"October 1, 2023, 10:00 AM",75
+Northern Mission,Manny's,"October 8, 2023, 10:00 AM",61
+Northern Mission,Manny's,"October 15, 2023, 10:00 AM",88
+Northern Mission,Manny's,"October 22, 2023, 10:00 AM",59
+Northern Mission,Manny's,"October 29, 2023, 10:00 AM",74
+Northern Mission,Manny's,"November 5, 2023, 10:00 AM",69
+Northern Mission,Manny's,"November 12, 2023, 10:00 AM",82
+Northern Mission,Manny's,"November 19, 2023, 10:00 AM",62
+Northern Mission,Manny's,"November 26, 2023, 10:00 AM",52
+Northern Mission,Manny's,"December 3, 2023, 10:00 AM",51
+Northern Mission,Manny's,"December 10, 2023, 10:00 AM",45
+Northern Mission,Manny's,"December 17, 2023, 10:00 AM",57
+Northern Mission,Manny's,"January 7, 2024, 10:00 AM",83
+Northern Mission,Manny's,"January 14, 2024, 10:00 AM",84
+Northern Mission,Manny's,"January 21, 2024, 10:00 AM",86
+Northern Mission,Manny's,"January 28, 2024, 10:00 AM",76
+Northern Mission,Manny's,"February 4, 2024, 10:00 AM",15
+Northern Mission,Manny's,"February 11, 2024, 10:00 AM",48
+Northern Mission,Manny's,"February 18, 2024, 10:00 AM",71
+Northern Mission,Manny's,"February 25, 2024, 10:00 AM",71
+Northern Mission,Manny's,"March 3, 2024, 10:00 AM",69
+Northern Mission,Manny's,"March 10, 2024, 10:00 AM",52
+Northern Mission,Manny's,"March 17, 2024, 10:00 AM",44
+Northern Mission,Manny's,"March 24, 2024, 10:00 AM",57
+Northern Mission,Manny's,"March 31, 2024, 10:00 AM",49
+Northern Mission,Manny's,"April 7, 2024, 10:00 AM",48
+Northern Mission,Manny's,"April 14, 2024, 10:00 AM",55
+Northern Mission,Manny's,"April 28, 2024, 10:00 AM",60
+Northern Mission,Manny's,"May 5, 2024, 10:00 AM",45
+Northern Mission,Manny's,"May 12, 2024, 10:00 AM",53
+Northern Mission,Manny's,"May 19, 2024, 9:38 AM",23
+Northern Mission,Manny's,"May 26, 2024, 10:00 AM",42
+Northern Mission,Manny's,"June 2, 2024, 10:00 AM",44
+Northern Mission,Manny's,"June 9, 2024, 10:00 AM",39
+Northern Mission,Manny's,"June 16, 2024, 10:00 AM",49
+Northern Mission,Manny's,"June 23, 2024, 10:00 AM",53
+Northern Mission,Manny's,"June 30, 2024, 10:00 AM",45
+Northern Mission,Manny's,"July 7, 2024, 10:00 AM",54
+Northern Mission,Manny's,"July 14, 2024, 10:00 AM",37
+Northern Mission,Manny's,"July 21, 2024, 10:00 AM",37
+Northern Mission,Manny's,"July 28, 2024, 10:00 AM",44
+Northern Mission,Manny's,"August 4, 2024, 10:00 AM",32
+Northern Mission,Manny's,"August 11, 2024, 10:00 AM",38
+Northern Mission,Manny's,"August 18, 2024, 10:00 AM",44
+Northern Mission,Manny's,"August 25, 2024, 10:00 AM",51
+Northern Mission,Manny's,"September 1, 2024, 10:00 AM",68
+Northern Mission,Manny's,"September 8, 2024, 10:00 AM",60
+Northern Mission,Manny's,"September 15, 2024, 10:00 AM",49
+Northern Mission,Manny's,"September 22, 2024, 10:00 AM",68
+Northern Mission,Manny's,"September 29, 2024, 10:00 AM",39
+Northern Mission,Manny's,"October 6, 2024, 10:00 AM",29
+Northern Mission,Manny's,"October 13, 2024, 10:00 AM",31
+Northern Mission,Manny's,"October 20, 2024, 10:00 AM",51
+Northern Mission,Manny's,"October 27, 2024, 10:00 AM",36
+Northern Mission,Manny's,"November 3, 2024, 10:00 AM",59
+Northern Mission,Manny's,"November 10, 2024, 10:00 AM",63
+Northern Mission,Manny's,"November 17, 2024, 10:00 AM",55
+Northern Mission,Manny's,"November 24, 2024, 10:00 AM",45
+Northern Mission,Manny's,"December 1, 2024, 10:00 AM",41
+Northern Mission,Manny's,"December 8, 2024, 10:00 AM",46
+Northern Mission,Manny's,"December 15, 2024, 10:00 AM",45
+Northern Mission,Manny's,"December 22, 2024, 10:00 AM",25
+Northern Mission,Manny's,"December 29, 2024, 10:00 AM",1
+Northern Mission,Manny's,"January 5, 2025, 10:00 AM",59
+Northern Mission,Manny's,"January 12, 2025, 10:00 AM",1
+Northern Mission,Manny's,"January 19, 2025, 10:00 AM",1
+Ocean Beach,Ocean Beach Cafe,"June 3, 2023, 12:00 AM",25
+Ocean Beach,Ocean Beach Cafe,"June 10, 2023, 12:00 AM",22
+Ocean Beach,Ocean Beach Cafe,"June 17, 2023, 12:00 AM",26
+Ocean Beach,Ocean Beach Cafe,"June 24, 2023, 10:00 AM",17
+Ocean Beach,Ocean Beach Cafe,"July 1, 2023, 10:00 AM",19
+Ocean Beach,Ocean Beach Cafe,"July 8, 2023, 10:00 AM",18
+Ocean Beach,Ocean Beach Cafe,"July 15, 2023, 10:00 AM",17
+Ocean Beach,Ocean Beach Cafe,"July 22, 2023, 10:00 AM",29
+Ocean Beach,Ocean Beach Cafe,"July 29, 2023, 10:00 AM",31
+Ocean Beach,Ocean Beach Cafe,"August 5, 2023, 10:00 AM",22
+Ocean Beach,Ocean Beach Cafe,"August 12, 2023, 10:00 AM",42
+Ocean Beach,Ocean Beach Cafe,"August 19, 2023, 10:00 AM",40
+Ocean Beach,Ocean Beach Cafe,"August 26, 2023, 10:00 AM",20
+Ocean Beach,Ocean Beach Cafe,"September 2, 2023, 10:00 AM",28
+Ocean Beach,Ocean Beach Cafe,"September 9, 2023, 10:00 AM",31
+Ocean Beach,Ocean Beach Cafe,"September 16, 2023, 10:00 AM",36
+Ocean Beach,Ocean Beach Cafe,"September 23, 2023, 10:00 AM",149
+Ocean Beach,Ocean Beach Cafe,"September 30, 2023, 10:00 AM",35
+Ocean Beach,Ocean Beach Cafe,"October 7, 2023, 10:00 AM",53
+Ocean Beach,Ocean Beach Cafe,"October 14, 2023, 10:00 AM",31
+Ocean Beach,Ocean Beach Cafe,"October 21, 2023, 10:00 AM",42
+Ocean Beach,Ocean Beach Cafe,"October 28, 2023, 10:00 AM",1
+Ocean Beach,Ocean Beach Cafe,"November 4, 2023, 10:00 AM",38
+Ocean Beach,Ocean Beach Cafe,"November 11, 2023, 10:00 AM",45
+Ocean Beach,Ocean Beach Cafe,"November 25, 2023, 10:00 AM",10
+Ocean Beach,Ocean Beach Cafe,"December 2, 2023, 12:00 AM",15
+Ocean Beach,Ocean Beach Cafe,"December 9, 2023, 12:00 AM",41
+Ocean Beach,Ocean Beach Cafe,"December 16, 2023, 10:00 AM",28
+Ocean Beach,Ocean Beach Cafe,"January 13, 2024, 10:00 AM",3
+Ocean Beach,Ocean Beach Cafe,"January 20, 2024, 10:00 AM",13
+Ocean Beach,Ocean Beach Cafe,"January 27, 2024, 12:00 AM",15
+Ocean Beach,Ocean Beach Cafe,"February 3, 2024, 12:00 AM",20
+Ocean Beach,Ocean Beach Cafe,"February 10, 2024, 12:00 AM",45
+Ocean Beach,Ocean Beach Cafe,"February 17, 2024, 12:00 AM",14
+Ocean Beach,Ocean Beach Cafe,"February 24, 2024, 12:00 AM",30
+Ocean Beach,Ocean Beach Cafe,"March 2, 2024, 12:00 AM",23
+Ocean Beach,Ocean Beach Cafe,"March 16, 2024, 10:00 AM",14
+Ocean Beach,Ocean Beach Cafe,"March 23, 2024, 10:00 AM",1
+Ocean Beach,Ocean Beach Cafe,"March 30, 2024, 10:00 AM",12
+Ocean Beach,Ocean Beach Cafe,"April 6, 2024, 10:00 AM",32
+Ocean Beach,Ocean Beach Cafe,"April 13, 2024, 10:00 AM",7
+Ocean Beach,Ocean Beach Cafe,"April 20, 2024, 10:00 AM",21
+Ocean Beach,Ocean Beach Cafe,"April 27, 2024, 10:00 AM",14
+Ocean Beach,Ocean Beach Cafe,"May 11, 2024, 10:00 AM",15
+Ocean Beach,Ocean Beach Cafe,"May 18, 2024, 10:00 AM",21
+Ocean Beach,Ocean Beach Cafe,"May 25, 2024, 10:00 AM",7
+Ocean Beach,Ocean Beach Cafe,"June 22, 2024, 10:00 AM",3
+Ocean Beach,Ocean Beach Cafe,"June 29, 2024, 10:00 AM",20
+Ocean Beach,Ocean Beach Cafe,"July 6, 2024, 10:00 AM",2
+Ocean Beach,Ocean Beach Cafe,"July 27, 2024, 10:00 AM",17
+Ocean Beach,Ocean Beach Cafe,"August 10, 2024, 10:00 AM",25
+Ocean Beach,Ocean Beach Cafe,"August 24, 2024, 10:00 AM",40
+Ocean Beach,Ocean Beach Cafe,"October 5, 2024, 10:00 AM",16
+Ocean Beach,Ocean Beach Cafe,"November 16, 2024, 10:00 AM",20
+Ocean Beach,Ocean Beach Cafe,"November 23, 2024, 10:00 AM",35
+Ocean Beach,Ocean Beach Cafe,"November 30, 2024, 10:00 AM",37
+Ocean Beach,Ocean Beach Cafe,"December 7, 2024, 10:00 AM",39
+South Bayview,Grata Wines,"May 20, 2023, 12:00 AM",50
+South Bayview,Grata Wines,"June 3, 2023, 12:00 AM",5
+South Bayview,Grata Wines,"June 10, 2023, 12:00 AM",16
+South Bayview,Grata Wines,"June 17, 2023, 12:00 AM",12
+South Bayview,Grata Wines,"June 24, 2023, 12:00 AM",30
+South Bayview,Grata Wines,"July 1, 2023, 12:00 AM",8
+South Bayview,Grata Wines,"July 8, 2023, 12:00 AM",12
+South Bayview,Grata Wines,"July 15, 2023, 12:00 AM",5
+South Bayview,Grata Wines,"July 22, 2023, 12:00 AM",16
+South Bayview,Grata Wines,"July 29, 2023, 12:00 AM",40
+South Bayview,Grata Wines,"August 5, 2023, 12:00 AM",15
+South Bayview,Grata Wines,"August 12, 2023, 12:00 AM",6
+South Bayview,Grata Wines,"August 19, 2023, 12:00 AM",16
+South Bayview,Grata Wines,"August 26, 2023, 12:00 AM",25
+South Bayview,Grata Wines,"September 2, 2023, 12:00 AM",10
+South Bayview,Grata Wines,"September 9, 2023, 12:00 AM",3
+South Bayview,Grata Wines,"September 16, 2023, 12:00 AM",7
+South Bayview,Grata Wines,"September 30, 2023, 12:00 AM",9
+South Bayview,Grata Wines,"October 7, 2023, 12:00 AM",20
+South Bayview,Grata Wines,"October 14, 2023, 12:00 AM",5
+South Bayview,Grata Wines,"October 21, 2023, 12:00 AM",4
+South Bayview,Grata Wines,"October 28, 2023, 12:00 AM",8
+South Bayview,Grata Wines,"November 4, 2023, 12:00 AM",7
+South Bayview,Grata Wines,"November 25, 2023, 12:00 AM",1
+South Bayview,Grata Wines,"December 2, 2023, 12:00 AM",2
+South Bayview,Grata Wines,"December 16, 2023, 12:00 AM",4
+South Bayview,Grata Wines,"January 6, 2024, 12:00 AM",5
+South Bayview,Grata Wines,"January 20, 2024, 12:00 AM",1
+South Bayview,Grata Wines,"January 27, 2024, 12:00 AM",16
+South Bayview,Grata Wines,"February 3, 2024, 12:00 AM",3
+South Bayview,Grata Wines,"February 10, 2024, 12:00 AM",3
+South Bayview,Grata Wines,"February 24, 2024, 12:00 AM",6
+South Bayview,Grata Wines,"March 9, 2024, 12:00 AM",9
+South Bayview,Grata Wines,"March 16, 2024, 12:00 AM",5
+South Bayview,Grata Wines,"March 30, 2024, 12:00 AM",5
+South Bayview,Grata Wines,"April 6, 2024, 12:00 AM",20
+South Bayview,Grata Wines,"April 20, 2024, 12:00 AM",40
+South Bayview,Grata Wines,"April 27, 2024, 12:00 AM",7
+South Bayview,Grata Wines,"May 11, 2024, 12:00 AM",10
+South Bayview,Grata Wines,"May 25, 2024, 12:00 AM",4
+South Bayview,Grata Wines,"June 29, 2024, 4:00 PM",5
+South Bayview,Grata Wines,"July 14, 2024, 4:00 PM",4
+South Bayview,Grata Wines,"July 22, 2024, 4:00 PM",6
+South Bayview,Grata Wines,"August 10, 2024, 4:00 PM",2
+South Mission,Sisters Coffee Shop,"June 10, 2023, 10:00 AM",6
+South Mission,Sisters Coffee Shop,"June 24, 2023, 10:00 AM",15
+South Mission,Sisters Coffee Shop,"July 1, 2023, 10:00 AM",11
+South Mission,Sisters Coffee Shop,"July 8, 2023, 10:00 AM",4
+South Mission,Sisters Coffee Shop,"July 15, 2023, 10:00 AM",19
+South Mission,Sisters Coffee Shop,"July 22, 2023, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"July 29, 2023, 10:00 AM",24
+South Mission,Sisters Coffee Shop,"August 5, 2023, 10:00 AM",26
+South Mission,Sisters Coffee Shop,"August 12, 2023, 10:00 AM",21
+South Mission,Sisters Coffee Shop,"August 19, 2023, 10:00 AM",16
+South Mission,Sisters Coffee Shop,"August 26, 2023, 11:09 AM",19
+South Mission,Sisters Coffee Shop,"September 2, 2023, 10:00 AM",15
+South Mission,Sisters Coffee Shop,"September 9, 2023, 10:00 AM",18
+South Mission,Sisters Coffee Shop,"September 16, 2023, 10:00 AM",19
+South Mission,Sisters Coffee Shop,"September 23, 2023, 10:00 AM",15
+South Mission,Sisters Coffee Shop,"September 30, 2023, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"October 7, 2023, 10:00 AM",8
+South Mission,Sisters Coffee Shop,"October 14, 2023, 10:00 AM",9
+South Mission,Sisters Coffee Shop,"October 21, 2023, 10:00 AM",11
+South Mission,Sisters Coffee Shop,"October 28, 2023, 10:00 AM",12
+South Mission,Sisters Coffee Shop,"November 4, 2023, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"November 11, 2023, 10:00 AM",15
+South Mission,Sisters Coffee Shop,"November 18, 2023, 10:00 AM",8
+South Mission,Sisters Coffee Shop,"November 25, 2023, 10:00 AM",16
+South Mission,Sisters Coffee Shop,"December 2, 2023, 10:00 AM",10
+South Mission,Sisters Coffee Shop,"December 9, 2023, 10:00 AM",8
+South Mission,Sisters Coffee Shop,"December 16, 2023, 10:00 AM",17
+South Mission,Sisters Coffee Shop,"December 23, 2023, 10:00 AM",20
+South Mission,Sisters Coffee Shop,"December 30, 2023, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"January 6, 2024, 10:00 AM",11
+South Mission,Sisters Coffee Shop,"January 13, 2024, 10:00 AM",21
+South Mission,Sisters Coffee Shop,"January 20, 2024, 10:00 AM",6
+South Mission,Sisters Coffee Shop,"January 27, 2024, 10:00 AM",15
+South Mission,Sisters Coffee Shop,"February 3, 2024, 10:00 AM",13
+South Mission,Sisters Coffee Shop,"February 10, 2024, 10:00 AM",6
+South Mission,Sisters Coffee Shop,"February 17, 2024, 10:00 AM",6
+South Mission,Sisters Coffee Shop,"February 24, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"March 2, 2024, 10:00 AM",8
+South Mission,Sisters Coffee Shop,"March 9, 2024, 10:00 AM",12
+South Mission,Sisters Coffee Shop,"March 16, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"March 23, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"March 30, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"April 6, 2024, 10:00 AM",16
+South Mission,Sisters Coffee Shop,"April 13, 2024, 10:00 AM",13
+South Mission,Sisters Coffee Shop,"April 20, 2024, 10:00 AM",11
+South Mission,Sisters Coffee Shop,"April 27, 2024, 10:00 AM",24
+South Mission,Sisters Coffee Shop,"May 4, 2024, 10:00 AM",9
+South Mission,Sisters Coffee Shop,"May 11, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"May 18, 2024, 10:00 AM",20
+South Mission,Sisters Coffee Shop,"May 25, 2024, 10:00 AM",8
+South Mission,Sisters Coffee Shop,"June 1, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"June 8, 2024, 10:00 AM",18
+South Mission,Sisters Coffee Shop,"June 15, 2024, 10:00 AM",13
+South Mission,Sisters Coffee Shop,"June 22, 2024, 10:00 AM",26
+South Mission,Sisters Coffee Shop,"June 29, 2024, 10:00 AM",27
+South Mission,Sisters Coffee Shop,"July 6, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"July 13, 2024, 10:00 AM",8
+South Mission,Sisters Coffee Shop,"July 20, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"July 27, 2024, 10:00 AM",22
+South Mission,Sisters Coffee Shop,"August 3, 2024, 10:00 AM",9
+South Mission,Sisters Coffee Shop,"August 10, 2024, 10:00 AM",22
+South Mission,Sisters Coffee Shop,"August 17, 2024, 10:00 AM",19
+South Mission,Sisters Coffee Shop,"August 24, 2024, 10:00 AM",21
+South Mission,Sisters Coffee Shop,"August 31, 2024, 10:00 AM",19
+South Mission,Sisters Coffee Shop,"September 7, 2024, 10:00 AM",41
+South Mission,Sisters Coffee Shop,"September 14, 2024, 10:00 AM",32
+South Mission,Sisters Coffee Shop,"September 21, 2024, 10:00 AM",18
+South Mission,Sisters Coffee Shop,"September 28, 2024, 10:00 AM",19
+South Mission,Sisters Coffee Shop,"October 5, 2024, 10:00 AM",21
+South Mission,Sisters Coffee Shop,"October 12, 2024, 10:00 AM",34
+South Mission,Sisters Coffee Shop,"October 19, 2024, 10:00 AM",25
+South Mission,Sisters Coffee Shop,"October 26, 2024, 10:00 AM",32
+South Mission,Sisters Coffee Shop,"November 2, 2024, 10:00 AM",28
+South Mission,Sisters Coffee Shop,"November 9, 2024, 10:00 AM",29
+South Mission,Sisters Coffee Shop,"November 16, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"November 17, 2024, 10:00 AM",15
+South Mission,Sisters Coffee Shop,"November 23, 2024, 10:00 AM",9
+South Mission,Sisters Coffee Shop,"November 30, 2024, 10:00 AM",11
+South Mission,Sisters Coffee Shop,"December 7, 2024, 10:00 AM",14
+South Mission,Sisters Coffee Shop,"December 14, 2024, 10:00 AM",10
+South Mission,Sisters Coffee Shop,"December 21, 2024, 10:00 AM",9
+South Mission,Sisters Coffee Shop,"December 28, 2024, 10:00 AM",4
+South Mission,Sisters Coffee Shop,"January 4, 2025, 10:00 AM",15
+South Mission,Sisters Coffee Shop,"January 11, 2025, 10:00 AM",1
+South Mission,Sisters Coffee Shop,"January 18, 2025, 10:00 AM",1
+West SoMa,Driftwood,"August 5, 2023, 12:00 AM",14
+West SoMa,Driftwood,"August 12, 2023, 12:00 AM",14
+West SoMa,Driftwood,"August 19, 2023, 12:00 AM",5
+West SoMa,Driftwood,"August 26, 2023, 12:00 AM",18
+West SoMa,Driftwood,"September 2, 2023, 12:00 AM",14
+West SoMa,Driftwood,"September 9, 2023, 12:00 AM",18
+West SoMa,Driftwood,"September 16, 2023, 12:00 AM",18
+West SoMa,Driftwood,"September 23, 2023, 12:00 AM",18
+West SoMa,Driftwood,"September 30, 2023, 12:00 AM",12
+West SoMa,Driftwood,"October 7, 2023, 12:00 AM",8
+West SoMa,Driftwood,"October 21, 2023, 12:00 AM",18
+West SoMa,Driftwood,"October 28, 2023, 12:00 AM",10
+West SoMa,Driftwood,"November 4, 2023, 12:00 AM",15
+West SoMa,Driftwood,"November 11, 2023, 12:00 AM",14
+West SoMa,Driftwood,"November 25, 2023, 12:00 AM",18
+West SoMa,Driftwood,"December 2, 2023, 12:00 AM",10
+West SoMa,Driftwood,"December 9, 2023, 12:00 AM",6
+West SoMa,Driftwood,"December 16, 2023, 12:00 AM",9
+West SoMa,Driftwood,"December 23, 2023, 12:00 AM",9
+West SoMa,Driftwood,"December 30, 2023, 12:00 AM",8
+West SoMa,Driftwood,"January 6, 2024, 12:00 AM",6
+West SoMa,Driftwood,"January 13, 2024, 12:00 AM",5
+West SoMa,Driftwood,"January 20, 2024, 12:00 AM",3
+West SoMa,Driftwood,"January 27, 2024, 12:00 AM",11
+West SoMa,Driftwood,"February 3, 2024, 12:00 AM",15
+West SoMa,Driftwood,"February 10, 2024, 4:00 PM",2
+West SoMa,Driftwood,"February 17, 2024, 12:00 AM",16
+West SoMa,Driftwood,"February 24, 2024, 4:00 PM",1
+West SoMa,Driftwood,"March 2, 2024, 12:00 AM",12
+West SoMa,Driftwood,"March 9, 2024, 4:00 PM",1
+West SoMa,Driftwood,"March 16, 2024, 12:00 AM",12
+West SoMa,Driftwood,"March 23, 2024, 12:00 AM",20
+West SoMa,Driftwood,"March 30, 2024, 12:00 AM",19
+West SoMa,Driftwood,"April 6, 2024, 12:00 AM",11
+West SoMa,Driftwood,"April 13, 2024, 12:00 AM",18
+West SoMa,Driftwood,"April 20, 2024, 12:00 AM",12
+West SoMa,Driftwood,"April 27, 2024, 12:00 AM",18
+West SoMa,Driftwood,"May 18, 2024, 12:00 AM",10
+West SoMa,Driftwood,"May 25, 2024, 12:00 AM",5
+West SoMa,Driftwood,"June 15, 2024, 12:00 AM",16
+West SoMa,Driftwood,"June 29, 2024, 4:00 PM",6
+West SoMa,Driftwood,"July 22, 2024, 4:00 PM",9

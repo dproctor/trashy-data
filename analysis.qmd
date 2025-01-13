@@ -10,6 +10,8 @@ Unfortunately, the second dataset is missing precise locations. I emailed SF gov
 TODO(devon): revisit once this is confirmed.
 ```
 
+# Observations
+
 ```{python}
 #| title: Look at schema
 #| echo: false
@@ -28,7 +30,7 @@ old_dataset = pl.read_csv("data/DPW_Street___Sidewalk_Evaluation_Results__CY22_2
     pl.col("Route ID:").alias("route_id"),
     pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
     pl.col("CreationDate").str.to_datetime("%m/%d/%Y %I:%M:%S %p").alias("evaluation_date"),
-    pl.col("the_geom").replace("POINT (0 0)", None).alias("geom"),
+    pl.col("the_geom").replace("POINT (0 0)", None).alias("geometry"),
     pl.col("Route Location:").alias("route_location"),
     pl.lit("old").alias("dataset"),
   )
@@ -37,24 +39,32 @@ new_dataset = pl.read_csv("data/Street___Sidewalk_Maintenance_Standards_Results_
     pl.col("Route ID:").alias("route_id"),
     pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
     pl.col("CreationDate").str.to_datetime("%m/%d/%Y %I:%M:%S %p").alias("evaluation_date"),
-    pl.lit(None).alias("geom"), # missing precise location data :/
+    pl.lit(None).alias("geometry"), # missing precise location data :/
     pl.col("Route Location:").alias("route_location"),
     pl.lit("new").alias("dataset"),
   )
 
-data = pl.concat([old_dataset, new_dataset]).unique(subset=["object_id", "route_id"], keep="first")
+observations = pl.concat([old_dataset, new_dataset]).unique(subset=["object_id", "route_id"], keep="first")
 
-data = data.join(
-  pl.read_csv("data/manual-geoms.csv"), on=["object_id", "route_id"], how="left"
+observations = observations.join(
+  pl.read_csv("data/coordinates.csv").select(
+    pl.col("Route ID:").alias("route_id"),
+    pl.format("POINT ({} {})", pl.col("X (Longitude)"), pl.col("Y (Latitude)")).alias("geometry"),
+  ),
+  on=["route_id"], how="left"
 ).with_columns(
-  pl.coalesce(pl.col(["geom", "geom_right"])).alias("geom")
-).drop("geom_right")
+  pl.coalesce(pl.col(["geometry", "geometry_right"])).alias("geometry")
+).drop("geometry_right")
 
-data.describe()
+observations = observations.with_columns(
+  pl.col("geometry").str.extract(r"POINT \(([^ ]+)").alias("lon").cast(pl.Float32),
+  pl.col("geometry").str.extract(r"([^ ]+)\)").alias("lat").cast(pl.Float32),
+)
+
+observations.describe()
 
 # data.sort("evaluation_date").write_csv("/tmp/dups.csv")
 ```
-
 
 We see that there is decent support in the time period that Clean Up the City has been active.
 
@@ -63,5 +73,176 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 plt.xticks(rotation=30)
-sns.histplot(data=data, x="evaluation_date")
+sns.histplot(data=observations, x="evaluation_date")
 ```
+
+# Cleanups
+
+We import a record of the cleanup times and locations
+
+- export from trashy postgres
+- manual mapping from host location -> coordinates
+
+```SQL
+SELECT neighborhood, location, time, case when override_participant_count > 0 then override_participant_count else count end
+FROM (
+SELECT neighborhood, location, time, COUNT(*) as count, AVG(override_participant_count) as override_participant_count
+FROM (
+    SELECT email, first_name, last_name, time, neighborhood, location, override_participant_count
+    FROM event_participants
+    FULL OUTER JOIN (
+        SELECT events.id as id, events.time, cleanups.neighborhood, cleanups.location, events.override_participant_count
+        FROM events
+        JOIN cleanups ON events.cleanup_id = cleanups.id
+    ) events_and_cleanups ON event_participants.event_id = events_and_cleanups.id
+) joined
+GROUP BY neighborhood, location, time
+) as raw
+```
+
+```SQL
+SELECT DISTINCT location, neighborhood
+FROM cleanups
+
+───────────────────────────────────────────────────
+       location               neighborhood
+───────────────────────────────────────────────────
+1   │  McCoppin Hub Plaza     The Hub
+2   │  Temo’s Cafe            24th Street
+3   │  Sisters Coffee Shop    South Mission
+4   │  Ocean Beach Cafe       Ocean Beach
+5   │  Gambit Lounge          Hayes Valley
+6   │  Jane on Larkin         Lower Polk
+7   │  Another Cafe           Lower Nob Hill
+8   │  Driftwood              West SoMa
+9   │  The Social Study       Fillmore
+10  │  TBD                    Lower Height          # Never actually used
+11  │  Manny's                Northern Mission
+12  │  Grata Wines            South Bayview
+13  │  Ocean Ale House        Ingleside
+14  │  All Good Pizza         Bayview
+
+```
+
+```{python}
+cleanups = pl.read_csv("data/cleanup_events.csv", schema_overrides={"count": pl.Float32}).select(
+  pl.col("location"),
+  pl.col("time").str.to_datetime("%B %d, %Y, %I:%M %p"),
+  pl.col("count").ceil().alias("participant_count")
+).join(
+  pl.read_csv("data/cleanup_locations.csv").select(
+    pl.col("location"),
+    pl.col("lon"),
+    pl.col("lat"),
+  ),
+  how="left",
+  on="location"
+)
+```
+
+# Feature extraction
+
+```{python}
+# Convert to geopandas, calculate distances, time since most recent/nearest cleanup
+# Should just threshold cleanup distance, e.g. find most recent cleanup that was within 1/4 mile of observation.
+# join observation on nearest cleanup name
+#   take most recent cleanup before observation
+
+# add circles to observations, radius 1/4 mile
+#   intersect with cleanups
+#   within intersection, take most recent cleanup before observation
+
+import geopandas as gp
+
+# print(gp.GeoSeries.from_wkt(cleanups["geometry"]))
+cleanups_gp = gp.GeoDataFrame(cleanups.to_pandas(), geometry=gp.points_from_xy(cleanups["lon"], cleanups["lat"]), crs="EPSG:3857")
+observations_gp = gp.GeoDataFrame(observations.to_pandas(), geometry=gp.points_from_xy(observations["lon"], observations["lat"]), crs="EPSG:3857")
+
+joined = observations_gp.sjoin_nearest(cleanups_gp, distance_col="distance")
+
+joined = pl.DataFrame(joined.drop(columns="geometry"))
+
+examples = (
+  joined
+    .filter(pl.col("time") < pl.col("evaluation_date"))
+    .group_by(["object_id", "route_id"])
+    .agg(pl.all().sort_by(pl.col("time")).last())
+    .select(
+      pl.col("distance"),
+      pl.col("participant_count"),
+      pl.col("sidewalk_litter"),
+      pl.col("evaluation_date").alias("evaluation_time"),
+      pl.col("time").alias("cleanup_time"),
+      pl.col("lon_left").alias("observation_lon"),
+      pl.col("lat_left").alias("observation_lat"),
+      pl.col("lon_right").alias("cleanup_lon"),
+      pl.col("lat_right").alias("cleanup_lat"),
+      (pl.col("evaluation_date") - pl.col("time")).alias("time_delta")
+    )
+)
+examples_gp = gp.GeoDataFrame(examples.to_pandas())
+examples_gp["observation_geom"] = gp.points_from_xy(examples_gp["observation_lon"], examples_gp["observation_lat"])
+examples_gp["cleanup_geom"] = gp.points_from_xy(examples_gp["cleanup_lon"], examples_gp["cleanup_lat"])
+examples_gp["geom"] = examples_gp["observation_geom"].shortest_line(examples_gp["cleanup_geom"])
+```
+
+examples_gp
+
+```{python}
+ojs_define(examples=examples_gp.to_json())
+```
+
+```{ojs}
+mutable selected_precinct = {}
+selected_precinct
+```
+
+```{ojs}
+div = document.createElement("div");
+```
+
+```{ojs}
+//| output: false
+mapboxgl = require("mapbox-gl")
+div.style = "height: 1000px; overflow: hidden;";
+
+map = new mapboxgl.Map({
+  container: div,
+  accessToken: "pk.eyJ1IjoiZHBybyIsImEiOiJjamhrNG03N2gweHFrMzdxb3A3ZXc2MDd2In0.FC_fu8WvE7POuOeYMUGHyg",
+  center: [-122.4380, 37.7500],
+  zoom: 12.2,
+});
+
+map.on('load', () => {
+        // Precinct data
+        map.addSource('examples-source', {
+            'type': 'geojson',
+            'data': JSON.parse(examples),
+        });
+        map.addLayer(
+            {
+                'id': 'examples-labels',
+                'type': 'symbol',
+                'source': 'examples-source',
+                'layout': {
+                  "text-field": "{distance}",
+                }
+            },
+        );
+        map.addLayer(
+            {
+                'id': 'examples',
+                'type': 'fill',
+                'source': 'examples-source',
+                'paint': {
+                    'fill-color': 'black',
+                    'fill-opacity': 0.0,
+                    'fill-outline-color': 'black',
+                }
+            },
+        );
+});
+```
+
+
+examples.describe()
