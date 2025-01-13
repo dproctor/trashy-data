@@ -67,6 +67,7 @@
                 pyarrow
                 pyparsing
                 scikit-learn
+                statsmodels
                 seaborn
                 shap
                 xgboost

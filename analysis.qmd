@@ -1,14 +1,11 @@
 ---
 title: Impact of Clean Up The City on sidewalk cleanliness
+format:
+  html:
+    embed-resources: true
 ---
 
 We begin by joining the two datasets published by DPW(<https://data.sfgov.org/City-Infrastructure/DPW-Street-Sidewalk-Evaluation-Results-CY22/fsqv-4vqv/about_data>, <https://data.sfgov.org/City-Infrastructure/Street-Sidewalk-Maintenance-Standards-Results-Jan-/qya8-uhsz/about_data>), as neither is a proper subset of the other.
-
-Unfortunately, the second dataset is missing precise locations. I emailed SF gov to see if this can be fixed. The alternative would be to manually add GPS coordiantes for 2,607 more observations.
-
-```
-TODO(devon): revisit once this is confirmed.
-```
 
 # Observations
 
@@ -23,28 +20,41 @@ with pl.Config(tbl_cols=-1, tbl_width_chars=1000):
   print(pl.read_csv("data/Street___Sidewalk_Maintenance_Standards_Results__Jan_2022-Jun_2024_20241209.csv").describe())
 ```
 
+```
+Cleanliness scale
+
+1 = None
+2 = A few traces
+3 = More than a few traces, but no accumulation
+4 = Distributed litter with some accumulation
+5 = Widespread litter with significant accumulation.
+```
+
 ```{python}
 #| title: Join old and new datasets
-old_dataset = pl.read_csv("data/DPW_Street___Sidewalk_Evaluation_Results__CY22_20241122.csv").select(
-    pl.col("ObjectID").alias("object_id"),
-    pl.col("Route ID:").alias("route_id"),
-    pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
-    pl.col("CreationDate").str.to_datetime("%m/%d/%Y %I:%M:%S %p").alias("evaluation_date"),
-    pl.col("the_geom").replace("POINT (0 0)", None).alias("geometry"),
-    pl.col("Route Location:").alias("route_location"),
-    pl.lit("old").alias("dataset"),
-  )
-new_dataset = pl.read_csv("data/Street___Sidewalk_Maintenance_Standards_Results__Jan_2022-Jun_2024_20241209.csv").select(
-    pl.col("ObjectID").alias("object_id"),
-    pl.col("Route ID:").alias("route_id"),
-    pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
-    pl.col("CreationDate").str.to_datetime("%m/%d/%Y %I:%M:%S %p").alias("evaluation_date"),
-    pl.lit(None).alias("geometry"), # missing precise location data :/
-    pl.col("Route Location:").alias("route_location"),
-    pl.lit("new").alias("dataset"),
-  )
-
-observations = pl.concat([old_dataset, new_dataset]).unique(subset=["object_id", "route_id"], keep="first")
+observations = (
+  pl.concat([
+    pl.read_csv("data/DPW_Street___Sidewalk_Evaluation_Results__CY22_20241122.csv").select(
+        pl.col("ObjectID").alias("object_id"),
+        pl.col("Route ID:").alias("route_id"),
+        pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
+        pl.col("CreationDate").str.to_datetime("%m/%d/%Y %I:%M:%S %p").alias("evaluation_date"),
+        pl.col("the_geom").replace("POINT (0 0)", None).alias("geometry"),
+        pl.col("Route Location:").alias("route_location"),
+        pl.lit("old").alias("dataset"),
+    ),
+    pl.read_csv("data/Street___Sidewalk_Maintenance_Standards_Results__Jan_2022-Jun_2024_20241209.csv").select(
+        pl.col("ObjectID").alias("object_id"),
+        pl.col("Route ID:").alias("route_id"),
+        pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
+        pl.col("CreationDate").str.to_datetime("%m/%d/%Y %I:%M:%S %p").alias("evaluation_date"),
+        pl.lit(None).alias("geometry"), # missing precise location data :/
+        pl.col("Route Location:").alias("route_location"),
+        pl.lit("new").alias("dataset"),
+    )
+  ])
+  .unique(subset=["object_id", "route_id"], keep="first")
+)
 
 observations = observations.join(
   pl.read_csv("data/coordinates.csv").select(
@@ -153,8 +163,8 @@ cleanups = pl.read_csv("data/cleanup_events.csv", schema_overrides={"count": pl.
 #   within intersection, take most recent cleanup before observation
 
 import geopandas as gp
+import pandas as pd
 
-# print(gp.GeoSeries.from_wkt(cleanups["geometry"]))
 cleanups_gp = gp.GeoDataFrame(cleanups.to_pandas(), geometry=gp.points_from_xy(cleanups["lon"], cleanups["lat"]), crs="EPSG:3857")
 observations_gp = gp.GeoDataFrame(observations.to_pandas(), geometry=gp.points_from_xy(observations["lon"], observations["lat"]), crs="EPSG:3857")
 
@@ -169,6 +179,7 @@ examples = (
     .agg(pl.all().sort_by(pl.col("time")).last())
     .select(
       pl.col("distance"),
+      pl.col("location"),
       pl.col("participant_count"),
       pl.col("sidewalk_litter"),
       pl.col("evaluation_date").alias("evaluation_time"),
@@ -183,13 +194,14 @@ examples = (
 examples_gp = gp.GeoDataFrame(examples.to_pandas())
 examples_gp["observation_geom"] = gp.points_from_xy(examples_gp["observation_lon"], examples_gp["observation_lat"])
 examples_gp["cleanup_geom"] = gp.points_from_xy(examples_gp["cleanup_lon"], examples_gp["cleanup_lat"])
-examples_gp["geom"] = examples_gp["observation_geom"].shortest_line(examples_gp["cleanup_geom"])
+examples_gp["geometry"] = examples_gp["observation_geom"].shortest_line(examples_gp["cleanup_geom"])
+examples_gp["time_delta"] = examples_gp["time_delta"].dt.total_seconds() / (60 * 60 * 24)
+examples_gp = examples_gp.drop(["evaluation_time", "cleanup_time", "observation_geom", "cleanup_geom"], axis=1)
+examples = pl.DataFrame(pd.DataFrame(examples_gp.drop("geometry", axis=1)))
 ```
 
-examples_gp
-
 ```{python}
-ojs_define(examples=examples_gp.to_json())
+ojs_define(examples=examples_gp[examples_gp["distance"] <= .01].to_json())
 ```
 
 ```{ojs}
@@ -231,18 +243,104 @@ map.on('load', () => {
         );
         map.addLayer(
             {
+
                 'id': 'examples',
-                'type': 'fill',
+                'type': 'line',
                 'source': 'examples-source',
+                'layout': {
+                    'line-join': 'round',
+                    'line-cap': 'round'
+                },
                 'paint': {
-                    'fill-color': 'black',
-                    'fill-opacity': 0.0,
-                    'fill-outline-color': 'black',
+                    'line-color': '#BF93E4',
+                    'line-width': 5
                 }
             },
         );
 });
 ```
+```{python}
+with pl.Config(tbl_rows=-1):
+  print(
+  examples
+    .filter(pl.col("distance") < .01)
+    .filter(pl.col("time_delta") <= 1 * 7)
+    ["location"].value_counts().sort("count")
+  )
+```
 
+```{python}
+ 
+import seaborn as sns
 
-examples.describe()
+sns.scatterplot(
+  data=examples,
+  x="distance",
+  y="time_delta",
+  hue="sidewalk_litter",
+)
+```
+
+```{python}
+sns.displot(
+  data=(
+    examples
+    .with_columns(
+      (pl.col("distance") <= .01).alias("close_to_cleanup"),
+    )
+    .filter(pl.col("distance") <=.01)
+    .filter(pl.col("time_delta") <= 1 * 7)
+    .filter(pl.col("location").is_in([
+      # "All Good Pizza",
+      # "Grata Wines",
+      # "Ocean Beach Cafe",
+      # "Ocean Ale House",
+      "Sisters Coffee Shop",
+      # "Driftwood",
+      # "Jane on Larkin",
+      # "Gambit Lounge",
+      # "Another Cafe",
+      # "Manny's",
+      # "The Social Study",
+    ]))
+  ),
+  kind="kde",
+  x="time_delta",
+  hue="sidewalk_litter",
+  row="location",
+  multiple="fill",
+  clip=[0, 1 * 7],
+  rug=True,
+  rug_kws={'color':'#0426d0', 'edgecolor':'#00dbff'}
+)
+```
+
+```{python}
+import statsmodels.formula.api as smf
+
+model = smf.ols(
+  'sidewalk_litter ~ time_delta + distance',
+  data=(
+    examples
+      .filter(pl.col("time_delta") <= 2 * 7)
+      .filter(pl.col("location").is_in([
+        # "All Good Pizza",
+        # "Grata Wines",
+        # "Ocean Beach Cafe",
+        # "Ocean Ale House",
+        "Sisters Coffee Shop",
+        # "Driftwood",
+        # "Jane on Larkin",
+        # "Gambit Lounge",
+        # "Another Cafe",
+        # "Manny's",
+        # "The Social Study",
+      ]))
+  )
+).fit()
+model.summary()
+```
+
+:::{.callout-important}
+We see that, for locations within the area of a cleanup, the **level of litter goes up by roughly a third point per week since the last cleanup**.
+:::
