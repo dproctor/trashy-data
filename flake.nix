@@ -47,6 +47,12 @@
             };
           in pkgs.python311.override {inherit packageOverrides; self = python;};
 
+          trashAuditData = fetchTree {
+            type = "file";
+            url = "https://data.sfgov.org/api/views/qya8-uhsz/rows.csv?fourfour=qya8-uhsz&cacheBust=1738352302&date=20250325&accessType=DOWNLOAD";
+            narHash = "sha256-jVVXyRBxgmgpzywdSs6cF7hvKq9MV+qSluXWvjdxwQ0=";
+          };
+
         in
         with pkgs;
         {
@@ -76,6 +82,7 @@
 
             shellHook = ''
               export DEV_ENVIRONMENT="trashy-data"
+              export TRASH_AUDIT_DATA=${trashAuditData}
             '';
           };
         }
