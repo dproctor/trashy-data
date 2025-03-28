@@ -80,6 +80,44 @@
               export TRASH_AUDIT_DATA=${sf-trash-audit-data.packages.${system}.default.src}
             '';
           };
+
+          packages.default = pkgs.stdenv.mkDerivation {
+            pname = "write-quarto-html";
+            version = "0.1.0";
+
+            src = ./.; # This includes all files in the current directory
+
+            buildInputs = [
+              (python.withPackages (p: with p; [
+                altair
+                geopandas
+                jupyter
+                jupyter-cache
+                matplotlib
+                osmnx
+                pandas
+                polars
+                pyarrow
+                pyparsing
+                scikit-learn
+                statsmodels
+                seaborn
+                shap
+                xgboost
+              ]))
+              quartoMinimal
+              which
+            ];
+
+            buildPhase = ''
+              # Create output directory
+              mkdir -p $out
+              export HOME=$(pwd)
+
+              export TRASH_AUDIT_DATA=${sf-trash-audit-data.packages.${system}.default.src}
+              quarto render analysis.qmd  --output-dir $out
+            '';
+          };
         }
       );
 }

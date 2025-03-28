@@ -13,11 +13,12 @@ We begin by joining the two datasets published by DPW(<https://data.sfgov.org/Ci
 #| title: Look at schema
 #| echo: false
 #| output: false
+import os
 import polars as pl
 
 with pl.Config(tbl_cols=-1, tbl_width_chars=1000):
   print(pl.read_csv("data/DPW_Street___Sidewalk_Evaluation_Results__CY22_20241122.csv").describe())
-  print(pl.read_csv("data/Street___Sidewalk_Maintenance_Standards_Results__Jan_2022-Jun_2024_20241209.csv").describe())
+  print(pl.read_csv(os.environ["TRASH_AUDIT_DATA"]).describe())
 ```
 
 ```
@@ -43,7 +44,7 @@ observations = (
         pl.col("Route Location:").alias("route_location"),
         pl.lit("old").alias("dataset"),
     ),
-    pl.read_csv("data/Street___Sidewalk_Maintenance_Standards_Results__Jan_2022-Jun_2024_20241209.csv").select(
+    pl.read_csv(os.environ["TRASH_AUDIT_DATA"]).select(
         pl.col("ObjectID").alias("object_id"),
         pl.col("Route ID:").alias("route_id"),
         pl.col("Select the statement that best describes the amount and distribution of litter on the sidewalk.").alias("sidewalk_litter"),
